@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+Connect4 Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack implementation of the classic Connect4 game. The frontend is built using React.js, while the backend is written in C. TailwindCSS is used for styling.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Interactive Gameplay: Play Connect4 with an intuitive and responsive UI.
 
-### `npm start`
+Real-time Updates: The game state updates dynamically as players take turns.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend in C: The backend logic for the game is implemented in C for optimized performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Modern UI: Built with React.js and styled using TailwindCSS.
 
-### `npm test`
+Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend: React.js, TailwindCSS
 
-### `npm run build`
+Backend: C
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed on your system:
 
-### `npm run eject`
+Node.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+gcc (C Compiler)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone https://github.com/yourusername/connect4.git
+cd connect4
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Setup Backend
 
-## Learn More
+Compile the C code:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+gcc -o connect4_backend connect4.c
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the backend server:
 
-### Code Splitting
+./connect4_backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Setup Frontend
 
-### Analyzing the Bundle Size
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
 
-### Advanced Configuration
+Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open your browser and navigate to http://localhost:3000.
 
-### Deployment
+Start playing Connect4 with another player.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Project Structure
 
-### `npm run build` fails to minify
+connect4/
+├── src/
+├── connect4_backend (compiled backend binary)
+├── connect4.c (backend source file)
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── README.md
+└── .gitignore
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+
+Create a new branch for your feature or bug fix.
+
+Commit your changes and push to your branch.
+
+Submit a pull request.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgments
+
+Thanks to the contributors of React.js, gcc, and TailwindCSS for providing the tools to build this project.
+
+Inspired by the classic Connect4 game.
