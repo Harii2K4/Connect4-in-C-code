@@ -12,7 +12,7 @@ This project is a full-stack implementation of the classic Connect4 game. The fr
 ## Technologies Used
 
 - **Frontend**: React.js, TailwindCSS
-- **Backend**: C
+- **Backend**: C,Mongoose 
 
 ## Installation
 
@@ -32,7 +32,7 @@ cd connect4
 
 
 ### Setup Backend
-gcc -o connect4_backend connect4.c
+gcc -o connect_four_backend connect_four_backend.c mongoose.c -lws2_32
 ./connect4_backend
 
 ### Setup Frontend
